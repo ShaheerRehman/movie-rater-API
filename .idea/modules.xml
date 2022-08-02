@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MovieRaterAPI.iml" filepath="$PROJECT_DIR$/.idea/MovieRaterAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../movie-rater/.idea/movie-rater.iml" filepath="$PROJECT_DIR$/../movie-rater/.idea/movie-rater.iml" />
     </modules>
   </component>
 </project>
