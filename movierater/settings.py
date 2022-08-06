@@ -26,11 +26,13 @@ SECRET_KEY = 'django-insecure-pi__1$nm$%t35&yo6slwv1kxjz8c4=(9022b1i8l6ao7h-=3rf
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['0.0.0.0',]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    # "sslserver",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +45,9 @@ INSTALLED_APPS = [
     'corsheaders',
 
 ]
-
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_SAMESITE = 'None'
+# SESSION_COOKIE_SAMESITE = 'None'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated', )
@@ -54,14 +58,18 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
+    "django_samesite_none.middleware.SameSiteNoneMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+# SESSION_COOKIE_SAMESITE = 'None'
+
 ROOT_URLCONF = 'movierater.urls'
 
 TEMPLATES = [
@@ -118,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Karachi'
 
 USE_I18N = True
 
