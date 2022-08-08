@@ -27,7 +27,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['movie-rater-shaheer.herokuapp.com']
+ALLOWED_HOSTS = ['movie-rater-shaheer.herokuapp.com',
+                 '127.0.0.1',
+                 'movie-rater-2bdb6.web.app',
+                 ]
 # ALLOWED_HOSTS = ['0.0.0.0',]
 
 # Application definition
