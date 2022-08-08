@@ -71,6 +71,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://movie-rater-2bdb6.web.app",
 ]
 # SESSION_COOKIE_SAMESITE = 'None'
 
